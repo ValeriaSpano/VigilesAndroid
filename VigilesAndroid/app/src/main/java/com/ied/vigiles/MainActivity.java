@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
                     return true;
+<<<<<<< HEAD
                 case R.id.navigation_search:
                     mTextMessage.setText(R.string.title_search);
                     return true;
@@ -31,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_profile:
                     mTextMessage.setText(R.string.title_profile);
+=======
+                case R.id.navigation_reports:
+                    mTextMessage.setText(R.string.title_reports);
+                    return true;
+                case R.id.navigation_notifications:
+                    mTextMessage.setText(R.string.title_notifications);
+>>>>>>> Revert "TapBar"
                     return true;
             }
             return false;

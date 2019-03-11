@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">VigilesAndroid</string>
     <string name="title_home">Home</string>
+<<<<<<< HEAD
     <string name="title_search">Cerca</string>
     <string name="title_reports">Aggiungi</string>
     <string name="title_historical">Storico</string>
     <string name="title_profile">Profilo</string>
+=======
+    <string name="title_reports">Reports</string>
+    <string name="title_notifications">Notifications</string>
+>>>>>>> Revert "TapBar"
 </resources>

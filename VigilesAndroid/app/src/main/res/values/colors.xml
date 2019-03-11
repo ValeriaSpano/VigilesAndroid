@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#d8363f</color>
+<<<<<<< HEAD
     <color name="colorPrimaryDark">#b11921</color>
+=======
+    <color name="colorPrimaryDark">#00574B</color>
+>>>>>>> Revert "TapBar"
     <color name="colorAccent">#ffffff</color>
 </resources>
