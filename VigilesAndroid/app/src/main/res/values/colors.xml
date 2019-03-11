@@ -2,9 +2,13 @@
 <resources>
     <color name="colorPrimary">#d8363f</color>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <color name="colorPrimaryDark">#b11921</color>
 =======
     <color name="colorPrimaryDark">#00574B</color>
 >>>>>>> Revert "TapBar"
+=======
+    <color name="colorPrimaryDark">#b11921</color>
+>>>>>>> Commit 11-03
     <color name="colorAccent">#ffffff</color>
 </resources>

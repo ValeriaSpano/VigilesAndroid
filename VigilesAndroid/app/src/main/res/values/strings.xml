@@ -2,6 +2,7 @@
     <string name="app_name">VigilesAndroid</string>
     <string name="title_home">Home</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <string name="title_search">Cerca</string>
     <string name="title_reports">Aggiungi</string>
     <string name="title_historical">Storico</string>
@@ -10,4 +11,10 @@
     <string name="title_reports">Reports</string>
     <string name="title_notifications">Notifications</string>
 >>>>>>> Revert "TapBar"
+=======
+    <string name="title_search">Search</string>
+    <string name="title_reports">Add Reports</string>
+    <string name="title_historical">Historical</string>
+    <string name="title_profile">Profile</string>
+>>>>>>> Commit 11-03
 </resources>
