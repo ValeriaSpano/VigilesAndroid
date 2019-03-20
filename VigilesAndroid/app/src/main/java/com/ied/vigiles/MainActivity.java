@@ -1,11 +1,14 @@
 package com.ied.vigiles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.ied.vigiles.MapsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
+                    Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                    startActivity(i);
                     return true;
                 case R.id.navigation_search:
                     mTextMessage.setText(R.string.title_search);
@@ -35,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
             return false;
         }
+
     };
 
     @Override
@@ -45,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        //ric
     }
 
 }
