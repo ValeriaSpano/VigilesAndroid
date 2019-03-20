@@ -20,7 +20,7 @@
             android:value="AIzaSyC0jxNsO5Cs1h8_QoWxMmFSI-Yel_DW4fM" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".MapsActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,8 +30,24 @@
         </activity>
 
         <activity
-            android:name=".MapsActivity" />
+            android:name=".SearchActivity"
+            android:label="@string/app_name">
+        </activity>
 
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".HistoryActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/app_name">
+        </activity>
 
     </application>
 
