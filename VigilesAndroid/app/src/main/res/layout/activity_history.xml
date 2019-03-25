@@ -15,7 +15,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginEnd="8dp"
-        android:text="@string/title_historical"
+        android:text="@string/title_history"
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.213" />
 
     <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation_historical"
+        android:id="@+id/navigation_history"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"

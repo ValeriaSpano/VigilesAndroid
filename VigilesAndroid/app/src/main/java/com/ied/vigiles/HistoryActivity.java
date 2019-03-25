@@ -19,7 +19,7 @@ public class HistoryActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_map:
+                case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
                     Intent g = new Intent(HistoryActivity.this, MapsActivity.class);
                     startActivity(g);
@@ -30,11 +30,11 @@ public class HistoryActivity extends AppCompatActivity {
                     startActivity(h);
                     return true;
                 case R.id.navigation_report:
-                    mTextMessage.setText(R.string.title_reports);
+                    mTextMessage.setText(R.string.title_report);
                     Intent i = new Intent(HistoryActivity.this, ReportActivity.class);
                     startActivity(i);
                 case R.id.navigation_history:
-                    mTextMessage.setText(R.string.title_historical);
+                    mTextMessage.setText(R.string.title_history);
                     return true;
                 case R.id.navigation_profile:
                     mTextMessage.setText(R.string.title_profile);
@@ -52,7 +52,7 @@ public class HistoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_history);
 
         mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_historical);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 }

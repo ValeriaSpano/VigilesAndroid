@@ -40,12 +40,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     startActivity(h);
                     return true;
                 case R.id.navigation_report:
-                    mTextMessage.setText(R.string.title_reports);
+                    mTextMessage.setText(R.string.title_report);
                     Intent i = new Intent(MapsActivity.this, ReportActivity.class);
                     startActivity(i);
                     return true;
                 case R.id.navigation_history:
-                    mTextMessage.setText(R.string.title_historical);
+                    mTextMessage.setText(R.string.title_history);
                     Intent j = new Intent(MapsActivity.this, HistoryActivity.class);
                     startActivity(j);
                     return true;
@@ -84,5 +84,3 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 }
 
-
-//hhhhhhhh

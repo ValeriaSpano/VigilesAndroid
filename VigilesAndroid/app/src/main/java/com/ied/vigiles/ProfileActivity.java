@@ -19,7 +19,7 @@ public class ProfileActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_historical:
+                case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
                     Intent g = new Intent(ProfileActivity.this, MapsActivity.class);
                     startActivity(g);
@@ -29,13 +29,13 @@ public class ProfileActivity extends AppCompatActivity {
                     Intent h = new Intent(ProfileActivity.this, SearchActivity.class);
                     startActivity(h);
                     return true;
-                case R.id.navigation_reports:
-                    mTextMessage.setText(R.string.title_reports);
+                case R.id.navigation_report:
+                    mTextMessage.setText(R.string.title_report);
                     Intent i = new Intent(ProfileActivity.this, ReportActivity.class);
                     startActivity(i);
                     return true;
-                case R.id.navigation_historical:
-                    mTextMessage.setText(R.string.title_historical);
+                case R.id.navigation_history:
+                    mTextMessage.setText(R.string.title_history);
                     Intent j = new Intent(ProfileActivity.this, HistoryActivity.class);
                     startActivity(j);
                     return true;
@@ -53,7 +53,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_historical);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 }

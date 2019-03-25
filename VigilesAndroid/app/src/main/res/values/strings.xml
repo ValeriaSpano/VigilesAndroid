@@ -2,9 +2,8 @@
     <string name="app_name">VigilesAndroid</string>
     <string name="title_home">Home</string>
     <string name="title_search">Cerca</string>
-    <string name="title_reports">Aggiungi</string>
-    <string name="title_historical">Storico</string>
+    <string name="title_report">Aggiungi</string>
+    <string name="title_history">Storico</string>
     <string name="title_profile">Profilo</string>
     
-    <string name="Maps_API">AIzaSyD_w5NDBMYCj-hun4Po49pg9VkWxju1nRM</string>
 </resources>
