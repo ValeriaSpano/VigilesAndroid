@@ -39,12 +39,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     Intent h = new Intent(MapsActivity.this, SearchActivity.class);
                     startActivity(h);
                     return true;
-                case R.id.navigation_reports:
+                case R.id.navigation_report:
                     mTextMessage.setText(R.string.title_reports);
                     Intent i = new Intent(MapsActivity.this, ReportActivity.class);
                     startActivity(i);
                     return true;
-                case R.id.navigation_historical:
+                case R.id.navigation_history:
                     mTextMessage.setText(R.string.title_historical);
                     Intent j = new Intent(MapsActivity.this, HistoryActivity.class);
                     startActivity(j);

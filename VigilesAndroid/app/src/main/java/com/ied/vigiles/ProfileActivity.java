@@ -8,8 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.ied.vigiles.MapsActivity;
-
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -21,7 +19,7 @@ public class ProfileActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.navigation_historical:
                     mTextMessage.setText(R.string.title_home);
                     Intent g = new Intent(ProfileActivity.this, MapsActivity.class);
                     startActivity(g);
@@ -55,7 +53,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_historical);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 }

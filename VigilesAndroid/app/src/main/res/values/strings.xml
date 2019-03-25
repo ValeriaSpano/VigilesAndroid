@@ -5,4 +5,6 @@
     <string name="title_reports">Aggiungi</string>
     <string name="title_historical">Storico</string>
     <string name="title_profile">Profilo</string>
+    
+    <string name="Maps_API">AIzaSyD_w5NDBMYCj-hun4Po49pg9VkWxju1nRM</string>
 </resources>

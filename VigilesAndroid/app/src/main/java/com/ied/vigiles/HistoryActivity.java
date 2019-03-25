@@ -8,8 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.ied.vigiles.MapsActivity;
-
 
 public class HistoryActivity extends AppCompatActivity {
 
@@ -21,7 +19,7 @@ public class HistoryActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.navigation_map:
                     mTextMessage.setText(R.string.title_home);
                     Intent g = new Intent(HistoryActivity.this, MapsActivity.class);
                     startActivity(g);
@@ -31,11 +29,11 @@ public class HistoryActivity extends AppCompatActivity {
                     Intent h = new Intent(HistoryActivity.this, SearchActivity.class);
                     startActivity(h);
                     return true;
-                case R.id.navigation_reports:
+                case R.id.navigation_report:
                     mTextMessage.setText(R.string.title_reports);
                     Intent i = new Intent(HistoryActivity.this, ReportActivity.class);
                     startActivity(i);
-                case R.id.navigation_historical:
+                case R.id.navigation_history:
                     mTextMessage.setText(R.string.title_historical);
                     return true;
                 case R.id.navigation_profile:
@@ -54,7 +52,7 @@ public class HistoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_history);
 
         mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_historical);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 }
