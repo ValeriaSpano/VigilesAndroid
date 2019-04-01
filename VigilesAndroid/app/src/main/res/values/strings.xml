@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">VigilesAndroid</string>
-    <string name="title_home">Home</string>
+    <string name="app_name">Vigiles</string>
+    <string name="title_map">Mappa</string>
     <string name="title_search">Cerca</string>
-    <string name="title_report">Aggiungi</string>
+    <string name="title_addReport">Aggiungi</string>
     <string name="title_history">Storico</string>
     <string name="title_profile">Profilo</string>
-    
 </resources>

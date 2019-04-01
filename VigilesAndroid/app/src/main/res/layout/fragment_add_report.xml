@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:backgroundTint="@color/colorPrimary"
+    tools:context=".AddReportFragment">
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"></android.support.design.widget.BottomNavigationView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Aggiungi segnalazione"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/report_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:hint="Titolo"
+        app:helperText="Titolo"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp">
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/report_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:hint="Indirizzo"
+        app:helperText="Indirizzo"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp">
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/report_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:hint="Descrizione"
+        app:helperText="Descrizione"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp">
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/report_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:hint="Tag"
+        app:helperText="Tag"
+        android:textSize="30sp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="380dp">
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="380dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:text="Media"/>
+
+    <ImageButton
+        android:id="@+id/mediaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:background="@color/colorPrimary"
+        android:tint="@color/colorAccent"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="380dp"/>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="INVIA"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"/>
+
+</RelativeLayout>
