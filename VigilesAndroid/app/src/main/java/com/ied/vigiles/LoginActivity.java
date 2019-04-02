@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
                 //prova per accedere senza dati inseriti
                 //Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                //eeee@startActivity(intent);
+                //startActivity(intent);
             }
         });
 
@@ -330,7 +330,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
 
             // TODO: register the new account here.
-            return true;
+            /*senza dati sul server, usare i login di esempio seguenti:
+            foo@example.com   password=hello
+            bar@example.com   passowrd=world
+            per inserire account generici non presenti in un array dell'app, basta scrivere return true (la password non risulterà incorretta)*/
+            return false;
         }
 
         @Override
@@ -339,7 +343,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
-                finish();
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
