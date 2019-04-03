@@ -58,6 +58,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         mapp.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         mapp.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         mapp.addMarker(markerOptions);
+//        mapp.setPadding(20, 20, 20, 20);
     }
 }
 

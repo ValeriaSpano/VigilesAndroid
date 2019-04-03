@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:layout_width="match_parent">
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:visibility="invisible"></android.support.design.widget.BottomNavigationView>
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
         android:text="Cerca"
         android:textColor="@color/colorAccent"
         android:textSize="30sp" />
 
     <SearchView
-        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="120dp"
-        android:background="@color/colorAccent"></SearchView>
+        android:layout_width="match_parent"></SearchView>
 
     <ListView
-        android:id="@+id/lisSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="220dp"
         android:background="@color/colorAccent"
         android:divider="@color/colorPrimary"
         android:dividerHeight="60dp"
+        android:id="@+id/lisSearch"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="220dp"
+        android:layout_width="wrap_content"
         android:visibility="visible"></ListView>
 
 </RelativeLayout>
