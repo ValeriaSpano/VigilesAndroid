@@ -49,10 +49,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mapp = googleMap;
 
-        LatLng latLng = new LatLng(22.5, 88.7);
+        LatLng latLng = new LatLng(45.461035, 9.210483);
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(latLng);
-        markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
+        markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
         markerOptions.title("Current Position");
         markerOptions.snippet("My Position");
         mapp.moveCamera(CameraUpdateFactory.newLatLng(latLng));
