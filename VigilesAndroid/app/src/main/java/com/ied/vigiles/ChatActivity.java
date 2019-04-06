@@ -15,6 +15,6 @@ public class ChatActivity extends AppCompatActivity {
 
         //serve per modificare
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setIcon(R.drawable.ic_iconapp);
+        actionBar.setIcon(R.drawable.ic_vigiles);
     }
 }
