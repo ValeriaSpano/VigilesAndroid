@@ -34,13 +34,7 @@ public class MainActivity extends AppCompatActivity {
         /*BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);*/
 
-        Button button = (Button)findViewById(R.id.chatBtn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ChatActivity.class));
-            }
-        });
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =

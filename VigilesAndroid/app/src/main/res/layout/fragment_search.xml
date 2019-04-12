@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline11"></SearchView>
 
     <ListView
-        android:id="@+id/lisSearch"
+        android:id="@+id/listSearch"
         android:layout_width="wrap_content"
         android:layout_height="529dp"
         android:layout_marginHorizontal="20dp"
@@ -43,7 +43,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimary"
         android:divider="@color/colorPrimary"
         android:dividerHeight="60dp"
         android:visibility="visible"

@@ -23,4 +23,17 @@
             tools:context=".MapsActivity"></FrameLayout>
     </FrameLayout>
 
+    <Button
+        android:id="@+id/chatBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/sym_action_chat"
+        android:backgroundTint="@color/colorPrimary"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+
 </android.support.constraint.ConstraintLayout>

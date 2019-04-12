@@ -3,6 +3,7 @@ package com.ied.vigiles;
 import android.Manifest;
 import android.animation.Animator;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
 import android.net.Uri;
@@ -46,8 +47,18 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             mapFragment = SupportMapFragment.newInstance();
             ft.replace(R.id.map, mapFragment).commit();
         }
+
+        Button button = (Button) v.findViewById(R.id.chatBtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ChatActivity.class));
+            }
+        });
+
         mapFragment.getMapAsync(this);
         return v;
+
     }
 
     @Override
